@@ -7,7 +7,7 @@ import Transition from "../components/Transition";
 const index = () => {
   return (
     <>
-      <Transition />
+      {/* <Transition /> */}
       <div className="relative overflow-hidden">
         <div className="absolute top-20 right-0 left-0 mx-auto lg:right-auto lg:left-auto">
           <div className="flex flex-col justify-center lg:flex-row items-center gap-2 px-10 lg:px-20">

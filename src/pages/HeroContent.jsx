@@ -7,16 +7,25 @@ import {
 import IMAGE from "../assets/mainIconsdark.svg";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import GetScreenSize from "../components/GetScreenSize";
 
 const HeroContent = () => {
+  const screenSize = GetScreenSize();
+
+  console.log(screenSize.height);
+
   return (
     <div className="relative h-screen text-white flex items-center justify-center z-20">
       <motion.div
         initial="hidden"
         animate="visible"
-        className="h-screen flex flex-row items-center justify-center px-10 lg:px-20 w-full"
+        className={`h-screen flex flex-row items-center justify-center px-10 lg:px-20 w-full`}
       >
-        <div className="h-full w-full flex flex-col gap-6 2xl:gap-3 justify-center m-auto text-start">
+        <div
+          className={`h-full w-full flex flex-col gap-6 justify-center m-auto text-start ${
+            screenSize.height >= 600 && "2xl:gap-3 mt-10"
+          } ${screenSize.height >= 900 && "2xl:gap-10 mt-0"}`}
+        >
           <motion.div
             variants={slideInFromTop}
             className="Welcome-box py-[8px] px-[14px] border border-[#7042f88b] opacity-[0.9]"
@@ -67,7 +76,7 @@ const HeroContent = () => {
           <img
             src={IMAGE}
             alt=""
-            className=" lg:w-[350px] lg:h-[350px] 2xl:w-[650px] 2xl:h-[650px]"
+            className=" lg:w-[350px] lg:h-[350px] 2xl:w-[600px] 2xl:h-[600px]"
           />
         </motion.div>
       </motion.div>
