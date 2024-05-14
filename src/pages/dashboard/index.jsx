@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 // Pages
 import About from "../about/index";
 import Resume from "../resume/index";
+import Works from "../works/index";
+import Blogs from "../blogs/index";
+import Contact from "../contact/index";
 
 // Components
 import Menu from "../../components/Menu";
@@ -15,7 +18,6 @@ import FloatingMobileMenu from "../../components/FloatingMobileMenu";
 
 // Assets
 import LOGO from "../../assets/logo2.png";
-import { slideInFromRight } from "../../../utils/motion";
 import { AiOutlineMenu } from "react-icons/ai";
 import { TiContacts } from "react-icons/ti";
 import { TbBrandBlogger } from "react-icons/tb";
@@ -80,7 +82,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="absolute top-20 right-20">
+        <div className="absolute top-10 right-10 lg:top-20 lg:right-20">
           <Link to="/">
             <BiExit color="#cecdd1" size={40} className="cursor-pointer" />
           </Link>

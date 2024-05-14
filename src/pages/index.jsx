@@ -3,14 +3,23 @@ import LOGO from "../assets/logo2.png";
 import HeroContent from "./HeroContent";
 import BlackHoleMiddle from "../components/BlackHoleMiddle";
 import Transition from "../components/Transition";
+import { motion } from "framer-motion";
+import { slideInFromTop } from "../../utils/motion";
 
 const index = () => {
   return (
     <>
-      {/* <Transition /> */}
+      <Transition />
       <div className="relative overflow-hidden">
-        <div className="absolute top-20 right-0 left-0 mx-auto lg:right-auto lg:left-auto">
-          <div className="flex flex-col justify-center lg:flex-row items-center gap-2 px-10 lg:px-20">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          className="absolute top-20 right-0 left-0 mx-auto lg:right-auto lg:left-auto"
+        >
+          <motion.div
+            variants={slideInFromTop}
+            className="flex flex-col justify-center lg:flex-row items-center gap-2 px-10 lg:px-20"
+          >
             <img src={LOGO} alt="" className="w-16 lg:w-24 z-30" />
             <div>
               <p
@@ -24,8 +33,8 @@ const index = () => {
                 I turn coffee into code.
               </p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <BlackHoleMiddle />
         <HeroContent />
       </div>

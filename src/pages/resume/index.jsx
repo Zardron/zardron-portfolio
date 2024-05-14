@@ -6,6 +6,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import GetScreenSize from "../../components/GetScreenSize";
 import ScrollToContent from "../../components/ScrollToContent";
+import TechStack from "./TechStack";
 
 const index = ({ scrollNow, setScrollNow }) => {
   const screenSize = GetScreenSize();
@@ -46,6 +47,8 @@ const index = ({ scrollNow, setScrollNow }) => {
         <Education />
 
         <Experience />
+
+        <TechStack />
       </div>
     </div>
   );

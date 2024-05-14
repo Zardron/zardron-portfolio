@@ -12,8 +12,6 @@ import GetScreenSize from "../components/GetScreenSize";
 const HeroContent = () => {
   const screenSize = GetScreenSize();
 
-  console.log(screenSize.height);
-
   return (
     <div className="relative h-screen text-white flex items-center justify-center z-20">
       <motion.div
