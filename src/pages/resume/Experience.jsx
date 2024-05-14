@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import RAKTHERM from "../../assets/raktherm.png";
 import CLOCKWORK from "../../assets/clockwork.jpg";
 import ACCENTURE from "../../assets/acn.jpg";
+import NINETYSIX from "../../assets/ninetysix.jpg";
+import LEAR from "../../assets/lear.jpg";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 const Experience = () => {
@@ -9,9 +11,11 @@ const Experience = () => {
     raktherm: false,
     clockwork: false,
     acn: false,
+    ns: false,
+    lear: false,
   });
 
-  const { raktherm, clockwork, acn } = readMore;
+  const { raktherm, clockwork, acn, ns, lear } = readMore;
   return (
     <div className="mt-4">
       <h1 className="text-xl font-bold mb-2 dark:text-white/80">Experience</h1>
@@ -85,6 +89,8 @@ const Experience = () => {
                   raktherm: !raktherm,
                   clockwork: false,
                   acn: false,
+                  ns: false,
+                  lear: false,
                 })
               }
             >
@@ -178,6 +184,8 @@ const Experience = () => {
                   raktherm: false,
                   clockwork: !clockwork,
                   acn: false,
+                  ns: false,
+                  lear: false,
                 })
               }
             >
@@ -282,10 +290,181 @@ const Experience = () => {
                   raktherm: false,
                   clockwork: false,
                   acn: !acn,
+                  ns: false,
+                  lear: false,
                 })
               }
             >
               {acn ? (
+                <>
+                  Read less
+                  <MdKeyboardArrowUp className="mt-1" />
+                </>
+              ) : (
+                <>
+                  Read more
+                  <MdKeyboardArrowDown className="mt-1" />
+                </>
+              )}
+            </p>
+          </div>
+        </div>
+
+        {/* NINETYSIX */}
+        <div className="flex flex-row gap-2 bg-gray-50/20 p-2 rounded-md">
+          <div className="w-[15%] flex flex-col items-center">
+            <div className="bg-white rounded-md p-2 h-[50px] w-full xl:h-[75px] flex items-center justify-center">
+              <img
+                src={NINETYSIX}
+                alt="accenture-logo"
+                className="h-full rounded-md"
+              />
+            </div>
+          </div>
+
+          <div className="w-[85%]">
+            <div className="flex items-center justify-between">
+              <p className="text-sm sm:text-[11px] lg:text-sm xl:text-lg font-medium text-white/80">
+                Web Developer
+              </p>
+            </div>
+            <p className="text-[10px] sm:text-[11px] lg:text-xs xl:text-sm text-white/80 font-light">
+              Ninety Six Group
+            </p>
+            <div
+              className={`${
+                ns ? "max-h-96 mb-2" : "max-h-0"
+              } overflow-hidden transition-all ease-linear duration-300 text-[10px] xl:text-sm text-white/80 font-light`}
+            >
+              <p>Cebu, Philippines</p>
+              <p>February 2021 - July 2021</p>
+              <div className="pt-4 text-[10px] xl:text-sm text-white/80 font-light">
+                <p className="font-medium">Responsibilities:</p>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">
+                    Creating a client-based web application using ReactJs for
+                    frontend, Laravel for backend, and MySQL for the database.
+                  </div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">
+                    Manage the API for the projects.
+                  </div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">
+                    Create / Update some functionalities
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p
+              className="text-[10px] text-blue-300 flex flex-row items-center cursor-pointer xl:text-base"
+              onClick={() =>
+                setReadMore({
+                  ...readMore,
+                  raktherm: false,
+                  clockwork: false,
+                  acn: false,
+                  ns: !ns,
+                  lear: false,
+                })
+              }
+            >
+              {ns ? (
+                <>
+                  Read less
+                  <MdKeyboardArrowUp className="mt-1" />
+                </>
+              ) : (
+                <>
+                  Read more
+                  <MdKeyboardArrowDown className="mt-1" />
+                </>
+              )}
+            </p>
+          </div>
+        </div>
+
+        {/* LEAR */}
+        <div className="flex flex-row gap-2 bg-gray-50/20 p-2 rounded-md">
+          <div className="w-[15%] flex flex-col items-center">
+            <div className="bg-white rounded-md p-2 h-[50px] w-full xl:h-[75px] flex items-center justify-center">
+              <img
+                src={LEAR}
+                alt="accenture-logo"
+                className="h-full rounded-md"
+              />
+            </div>
+          </div>
+
+          <div className="w-[85%]">
+            <div className="flex items-center justify-between">
+              <p className="text-sm sm:text-[11px] lg:text-sm xl:text-lg font-medium text-white/80">
+                Web Developer
+              </p>
+            </div>
+            <p className="text-[10px] sm:text-[11px] lg:text-xs xl:text-sm text-white/80 font-light">
+              Lear Corporation
+            </p>
+            <div
+              className={`${
+                lear ? "max-h-96 mb-2" : "max-h-0"
+              } overflow-hidden transition-all ease-linear duration-300 text-[10px] xl:text-sm text-white/80 font-light`}
+            >
+              <p>Cebu, Philippines</p>
+              <p>April 2017 - December 2020</p>
+              <div className="pt-4 text-[10px] xl:text-sm text-white/80 font-light">
+                <p className="font-medium">Responsibilities:</p>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">Develop HRMS</div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">Refactor Code</div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">
+                    Adding new function on their existing system
+                  </div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">Debug errors</div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">
+                    Creating new UI for the system
+                  </div>
+                </div>
+                <div className="flex justify-between">
+                  <div className="w-[5%] lg:w-[1%]">▪</div>
+                  <div className="w-[95%] lg:w-[99%]">
+                    Update and Maintain HRMS
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p
+              className="text-[10px] text-blue-300 flex flex-row items-center cursor-pointer xl:text-base"
+              onClick={() =>
+                setReadMore({
+                  ...readMore,
+                  raktherm: false,
+                  clockwork: false,
+                  acn: false,
+                  ns: false,
+                  lear: !lear,
+                })
+              }
+            >
+              {lear ? (
                 <>
                   Read less
                   <MdKeyboardArrowUp className="mt-1" />
