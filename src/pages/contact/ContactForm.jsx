@@ -1,6 +1,24 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    toast.success(
+      "Thank you for reaching out to me! I will reply you as soon as possible.",
+      {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      }
+    );
+  };
   return (
     <div className="bg-gray-50/10 p-10 rounded-md">
       <div className="flex flex-col items-center justify-center mb-6">
@@ -10,7 +28,7 @@ const ContactForm = () => {
         <div className="w-[80%] border-b border-[#438eff]"></div>
       </div>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2">
           <input
             type="text"

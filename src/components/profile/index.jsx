@@ -5,9 +5,9 @@ import SocialMedia from "./SocialMedia";
 import BasicDetails from "./BasicDetails";
 import Button from "../Button";
 import { GoDownload } from "react-icons/go";
-import MyResume from "../../assets/PESQUERA-CV.pdf";
+import MyResume from "../../assets/PESQUERA_CV.pdf";
 
-import { ClipLoader, BeatLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 
 const index = () => {
   const [loading, setLoading] = useState(false);

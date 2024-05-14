@@ -4,6 +4,8 @@ import StarsCanvas from "./components/StarBackground.jsx";
 import Home from "./pages/index.jsx";
 import Dashboard from "./pages/dashboard/index";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
+        <ToastContainer />
       </BrowserRouter>
     </div>
   );
