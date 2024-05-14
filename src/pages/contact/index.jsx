@@ -39,9 +39,7 @@ const index = ({ scrollNow, setScrollNow }) => {
         </div>
       </div>
 
-      <div className="mt-4 animate__animated animate__fadeInUp">
-        <ContactForm />
-      </div>
+      <ContactForm />
     </div>
   );
 };

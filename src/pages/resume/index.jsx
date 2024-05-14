@@ -43,13 +43,11 @@ const index = ({ scrollNow, setScrollNow }) => {
         </div>
       </div>
 
-      <div className="animate__animated animate__fadeInUp">
-        <Education />
+      <Education />
 
-        <Experience />
+      <Experience />
 
-        <TechStack />
-      </div>
+      <TechStack />
     </div>
   );
 };

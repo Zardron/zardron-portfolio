@@ -42,7 +42,7 @@ const index = ({ scrollNow, setScrollNow }) => {
         </div>
       </div>
 
-      <div className="animate__animated animate__fadeInUp mt-2">
+      <div className="mt-2">
         <AboutMe />
         <WhatIDo />
         <SkillRate />

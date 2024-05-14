@@ -40,11 +40,9 @@ const index = ({ scrollNow, setScrollNow }) => {
         </div>
       </div>
 
-      <div className="animate__animated animate__fadeInUp">
-        <h1 className="text-xl font-bold mb-4 dark:text-white/80">Companies</h1>
+      <h1 className="text-xl font-bold mb-4 dark:text-white/80">Companies</h1>
 
-        <Companies />
-      </div>
+      <Companies />
     </div>
   );
 };
