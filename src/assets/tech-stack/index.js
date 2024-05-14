@@ -19,6 +19,7 @@ import ILLUSTRATOR from "./illustrator.png";
 import PHOTOSHOP from "./photoshop.png";
 import LARAVEL from "./laravel.png";
 import INDESIGN from "./indesign.png";
+import FIGMA from "./figma.png";
 
 export {
   CSS,
@@ -42,4 +43,5 @@ export {
   PHOTOSHOP,
   LARAVEL,
   INDESIGN,
+  FIGMA,
 };

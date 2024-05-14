@@ -8,7 +8,6 @@ import WhatIDo from "./WhatIDo.jsx";
 import SkillRate from "./SkillRate.jsx";
 
 const index = ({ scrollNow, setScrollNow }) => {
-  console.log(scrollNow);
   const screenSize = GetScreenSize();
 
   useEffect(() => {
