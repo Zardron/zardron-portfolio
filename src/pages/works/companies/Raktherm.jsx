@@ -3,15 +3,7 @@ import RAK1 from "../../../assets/works/raktherm/1.png";
 import RAK2 from "../../../assets/works/raktherm/2.png";
 import RAK3 from "../../../assets/works/raktherm/3.png";
 import RAK4 from "../../../assets/works/raktherm/4.png";
-import {
-  CSS,
-  HTML,
-  JAVASCRIPT,
-  MYSQL,
-  PHP,
-  REACT,
-  TAILWIND,
-} from "../../../assets/tech-stack";
+import { CSS, HTML, JAVASCRIPT, MYSQL, PHP } from "../../../assets/tech-stack";
 
 const Raktherm = () => {
   const [grow1, setGrow1] = useState(false);
@@ -28,8 +20,8 @@ const Raktherm = () => {
       <div className="w-full mt-4">
         <div className="flex items-center">
           <div
-            className={`h-[250px]  ${
-              grow1 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow1 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tl-md rounded-bl-md`}
             onClick={() => {
               setGrow1(!grow1);
@@ -54,8 +46,8 @@ const Raktherm = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow2 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow2 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
             onClick={() => {
               setGrow1(false);
@@ -80,8 +72,8 @@ const Raktherm = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow3 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow3 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
             onClick={() => {
               setGrow1(false);
@@ -106,8 +98,8 @@ const Raktherm = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow4 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow4 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tr-md rounded-br-md`}
             onClick={() => {
               setGrow1(false);

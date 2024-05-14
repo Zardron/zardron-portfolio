@@ -29,8 +29,8 @@ const Rvh = () => {
       <div className="w-full mt-4">
         <div className="flex items-center">
           <div
-            className={`h-[250px]  ${
-              grow1 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow1 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tl-md rounded-bl-md`}
             onClick={() => {
               setGrow1(!grow1);
@@ -55,8 +55,8 @@ const Rvh = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow2 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow2 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
             onClick={() => {
               setGrow1(false);
@@ -81,8 +81,8 @@ const Rvh = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow3 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow3 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
             onClick={() => {
               setGrow1(false);
@@ -107,8 +107,8 @@ const Rvh = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow4 ? "w-[78vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow4 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tr-md rounded-br-md`}
             onClick={() => {
               setGrow1(false);
