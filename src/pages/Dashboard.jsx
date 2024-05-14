@@ -43,6 +43,8 @@ const Dashboard = ({ darkMode }) => {
         return <Blogs {...pageProps} />;
       case "contact":
         return <Contact {...pageProps} />;
+      default:
+        return <About {...pageProps} />;
     }
   };
   return (
