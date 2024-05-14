@@ -139,11 +139,11 @@ const Rvh = () => {
           customer to advance booking on available rooms in the hotel.
         </h1>
 
-        <div className="flex text-base dark:text-white/80 mt-1">
-          <div className="w-1/6 font-thin flex items-center justify-between mr-2">
+        <div className="flex flex-col lg:flex-row text-base dark:text-white/80 mt-1">
+          <div className="w-full lg:w-1/6 font-thin flex items-center justify-normal lg:justify-between mr-2">
             Tech Stack <span>:</span>{" "}
           </div>
-          <div className="flex items-start gap-2">
+          <div className="flex flex-wrap items-start gap-2 my-2 lg:my-0">
             <img
               src={HTML}
               alt="tech-stack logo"

@@ -26,8 +26,8 @@ const Hashim = () => {
       <div className="w-full mt-4">
         <div className="flex items-center">
           <div
-            className={`h-[250px]  ${
-              grow1 ? "w-[90vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow1 ? "w-[110vw] lg:w-[90vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tl-md rounded-bl-md`}
             onClick={() => {
               setGrow1(!grow1);
@@ -52,8 +52,8 @@ const Hashim = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow2 ? "w-[90vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow2 ? "w-[110vw] lg:w-[90vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
             onClick={() => {
               setGrow1(false);
@@ -78,8 +78,8 @@ const Hashim = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow3 ? "w-[90vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow3 ? "w-[110vw] lg:w-[90vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
             onClick={() => {
               setGrow1(false);
@@ -104,8 +104,8 @@ const Hashim = () => {
             />
           </div>
           <div
-            className={`h-[250px]  ${
-              grow4 ? "w-[90vw]" : "w-1/4"
+            className={`h-[150px] lg:h-[250px]  ${
+              grow4 ? "w-[110vw] lg:w-[90vw]" : "w-1/4"
             } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tr-md rounded-br-md`}
             onClick={() => {
               setGrow1(false);
@@ -137,11 +137,11 @@ const Hashim = () => {
           Website for Hashim Industry Group based in Saudi Arabia.
         </h1>
 
-        <div className="flex text-base dark:text-white/80 mt-1">
-          <div className="w-1/6 font-thin flex items-center justify-between mr-2">
+        <div className="flex flex-col lg:flex-row text-base dark:text-white/80 mt-1">
+          <div className="w-full lg:w-1/6 font-thin flex items-center justify-normal lg:justify-between mr-2">
             Tech Stack <span>:</span>{" "}
           </div>
-          <div className="flex items-start gap-2">
+          <div className="flex flex-wrap items-start gap-2 my-2 lg:my-0">
             <img
               src={HTML}
               alt="tech-stack logo"
