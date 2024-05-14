@@ -9,7 +9,7 @@ const Education = () => {
       <div className="flex flex-row gap-2 bg-gray-50/30 p-2 rounded-md">
         <div className="w-[15%] flex flex-col items-center justify-center bg-white rounded-md p-2">
           <div className="w-full">
-            <img src={UC} alt="uc-logo" className="h-full rounded-md" />
+            <img src={UC} alt="uc-logo" className="rounded-md" />
           </div>
         </div>
 

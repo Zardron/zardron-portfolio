@@ -1,9 +1,10 @@
 import React from "react";
-import { IoPersonOutline } from "react-icons/io5";
-import { FiFileText } from "react-icons/fi";
-import { SlBriefcase } from "react-icons/sl";
-import { TbBrandBlogger } from "react-icons/tb";
-import { TiContacts } from "react-icons/ti";
+// import { IoPersonOutline } from "react-icons/io5";
+// import { FiFileText } from "react-icons/fi";
+// import { SlBriefcase } from "react-icons/sl";
+// import { TbBrandBlogger } from "react-icons/tb";
+// import { TiContacts } from "react-icons/ti";
+import { ABOUT, BLOGS, CONTACT, RESUME, WORKS } from "../assets/menu-icon";
 
 const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
   return (
@@ -20,11 +21,7 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <IoPersonOutline
-            //className="md:text-sm text-2xl"
-
-            className="md:text-sm lg:text-2xl text-white/80"
-          />
+          <img src={ABOUT} alt="" />
           <p className="font-medium text-[10px] text-white/80">About</p>
         </div>
 
@@ -39,7 +36,7 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <FiFileText className="md:text-sm lg:text-2xl text-white/80" />
+          <img src={RESUME} alt="" />
           <p className="font-medium text-[10px] text-white/80">Resume</p>
         </div>
 
@@ -54,7 +51,7 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <SlBriefcase className="md:text-sm lg:text-2xl text-white/80" />
+          <img src={WORKS} alt="" />
           <p className="font-medium text-[10px] text-white/80">Works</p>
         </div>
 
@@ -69,7 +66,7 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <TbBrandBlogger className="md:text-sm lg:text-2xl text-white/80" />
+          <img src={BLOGS} alt="" />
           <p className="font-medium text-[10px] text-white/80">Blogs</p>
         </div>
 
@@ -84,7 +81,7 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             setScrollNow(true);
           }}
         >
-          <TiContacts className="md:text-sm lg:text-2xl text-white/80" />
+          <img src={CONTACT} alt="" />
           <p className="font-medium text-[10px] text-white/80">Contact</p>
         </div>
       </div>
