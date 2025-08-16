@@ -98,15 +98,24 @@ export const EXPERIENCE = [
   {
     position: "Web Developer",
     companyName: "RAKtherm Ultimate Piping Solution",
-    address: "Ras al Khaimah, United Arab Emirates",
-    duration: "October 2022 - April 2024 (Full-time)",
+    address: "Cebu, Central Visayas, Philippines",
+    duration: "October 2022 - May 2024 (1 yr 8 mos)",
     slug: "raktherm",
     responsibilities: [
       {
-        desc: "Create new web applications for company.",
+        desc: "Develop and maintain company websites and web applications.",
       },
       {
-        desc: "Managing company web applications",
+        desc: "Create responsive user interfaces and interactive components.",
+      },
+      {
+        desc: "Implement new features and functionality as requested.",
+      },
+      {
+        desc: "Ensure website performance and optimization.",
+      },
+      {
+        desc: "Collaborate with design and development teams.",
       },
       {
         desc: "Create repository for company web applications.",
@@ -198,7 +207,7 @@ export const EXPERIENCE = [
 
 export const BLOGS = [
   {
-    id: 7,
+    id: 1,
     title: "Web Development Trends 2025: What's Next for Full-Stack Developers",
     excerpt: "A forward-looking analysis of emerging technologies, frameworks, and methodologies that will shape the web development landscape in 2025 and beyond.",
     content: `
@@ -236,10 +245,17 @@ export const BLOGS = [
     category: "Emerging Technologies",
     date: "January 15, 2025",
     readTime: "14 min read",
-    tags: ["2025", "AI", "WebAssembly", "Edge Computing", "Trends", "Future Tech"]
+    tags: ["2025", "AI", "WebAssembly", "Edge Computing", "Trends", "Future Tech"],
+    sources: [
+      "GitHub Copilot Documentation",
+      "WebAssembly Official Spec",
+      "Edge Computing Best Practices",
+      "Web Development Trends 2025",
+      "AI in Software Development"
+    ]
   },
   {
-    id: 4,
+    id: 2,
     title: "Next.js: The Complete Guide to Full-Stack React Development",
     excerpt: "Exploring Next.js as a powerful framework for building production-ready React applications with server-side rendering, API routes, and optimized performance.",
     content: `
@@ -271,10 +287,17 @@ export const BLOGS = [
     category: "Full Stack Development",
     date: "December 12, 2024",
     readTime: "15 min read",
-    tags: ["Next.js", "React", "SSR", "API Routes", "Performance", "Deployment"]
+    tags: ["Next.js", "React", "SSR", "API Routes", "Performance", "Deployment"],
+    sources: [
+      "Next.js Official Documentation",
+      "Vercel Deployment Guide",
+      "React Server Components",
+      "Next.js Performance Optimization",
+      "Full-Stack Development Best Practices"
+    ]
   },
   {
-    id: 1,
+    id: 3,
     title: "Building Scalable Web Applications: A Full Stack Developer's Journey",
     excerpt: "Exploring the challenges and solutions in creating enterprise-level web applications that can handle thousands of concurrent users while maintaining performance and reliability.",
     content: `
@@ -310,7 +333,7 @@ export const BLOGS = [
     ]
   },
   {
-    id: 2,
+    id: 4,
     title: "Modern CSS Techniques: From SCSS to Tailwind CSS",
     excerpt: "A deep dive into modern CSS methodologies and how they've revolutionized the way we approach styling in web development.",
     content: `
@@ -346,7 +369,7 @@ export const BLOGS = [
     ]
   },
   {
-    id: 3,
+    id: 5,
     title: "Mastering React.js: From Components to Advanced Patterns",
     excerpt: "A comprehensive guide to React.js development, covering everything from basic components to advanced patterns and best practices for building scalable applications.",
     content: `
@@ -388,42 +411,7 @@ export const BLOGS = [
     ]
   },
   {
-    id: 4,
-    title: "Next.js: The Complete Guide to Full-Stack React Development",
-    excerpt: "Exploring Next.js as a powerful framework for building production-ready React applications with server-side rendering, API routes, and optimized performance.",
-    content: `
-      <p>Next.js has revolutionized how I approach React development. As a full-stack framework, it provides everything needed to build modern web applications with excellent performance, SEO capabilities, and developer experience.</p>
-      
-      <h3>Server-Side Rendering (SSR)</h3>
-      <p>Next.js's SSR capabilities have been game-changing for applications requiring SEO optimization. I've implemented dynamic rendering strategies that provide fast initial page loads while maintaining interactive user experiences. The ability to pre-render pages at build time or request time has significantly improved performance.</p>
-      
-      <h3>API Routes and Backend Integration</h3>
-      <p>Next.js API routes have simplified my backend development workflow. I've created RESTful APIs, GraphQL endpoints, and webhook handlers all within the same project. This unified approach reduces complexity and improves development speed.</p>
-      
-      <h3>File-Based Routing</h3>
-      <p>The file-based routing system in Next.js has made navigation intuitive and maintainable. I've implemented dynamic routes, nested layouts, and middleware for authentication and authorization. The App Router in Next.js 13+ has further improved the developer experience.</p>
-      
-      <h3>Performance Optimization</h3>
-      <ul>
-        <li>Automatic code splitting and lazy loading</li>
-        <li>Image optimization with next/image</li>
-        <li>Font optimization with next/font</li>
-        <li>Built-in caching and CDN integration</li>
-      </ul>
-      
-      <h3>Deployment and Scaling</h3>
-      <p>Next.js applications deploy seamlessly to platforms like Vercel, Netlify, and AWS. I've implemented CI/CD pipelines that automatically build, test, and deploy applications. The framework's built-in optimizations ensure applications scale efficiently.</p>
-      
-      <h3>Advanced Features</h3>
-      <p>Features like Incremental Static Regeneration (ISR), middleware, and internationalization have enabled me to build sophisticated applications. I've implemented multi-language support, A/B testing, and personalized content delivery using Next.js's powerful features.</p>
-    `,
-    category: "Full Stack Development",
-    date: "December 12, 2024",
-    readTime: "15 min read",
-    tags: ["Next.js", "React", "SSR", "API Routes", "Performance", "Deployment"]
-  },
-  {
-    id: 5,
+    id: 6,
     title: "GraphQL vs REST: Choosing the Right API Architecture",
     excerpt: "A practical comparison of GraphQL and REST APIs based on real-world implementation experiences in enterprise applications.",
     content: `
@@ -462,7 +450,7 @@ export const BLOGS = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     title: "The Future of Web Development: 3D, AR, and VR Technologies",
     excerpt: "Exploring the cutting-edge technologies that are reshaping web development and how they're being implemented in modern applications.",
     content: `
@@ -502,46 +490,5 @@ export const BLOGS = [
       "Web 3D Performance Optimization",
       "AR/VR Development Best Practices"
     ]
-  },
-  {
-    id: 7,
-    title: "Web Development Trends 2025: What's Next for Full-Stack Developers",
-    excerpt: "A forward-looking analysis of emerging technologies, frameworks, and methodologies that will shape the web development landscape in 2025 and beyond.",
-    content: `
-      <p>As we approach 2025, the web development landscape is evolving at an unprecedented pace. Based on my experience working with cutting-edge technologies and observing industry trends, here are the key developments that will define the future of full-stack development.</p>
-      
-      <h3>AI-Powered Development Tools</h3>
-      <p>Artificial Intelligence is revolutionizing how we write and maintain code. GitHub Copilot, Amazon CodeWhisperer, and similar tools are becoming indispensable for developers. I've experienced firsthand how AI assistants can accelerate development while maintaining code quality. In 2025, we'll see even more sophisticated AI tools that can generate entire application architectures and optimize performance automatically.</p>
-      
-      <h3>WebAssembly and Performance</h3>
-      <p>WebAssembly (WASM) is enabling near-native performance in web browsers. I've experimented with WASM for computationally intensive tasks like 3D rendering and data processing. By 2025, WASM will become mainstream, allowing developers to run complex applications like video editing software and CAD tools directly in the browser.</p>
-      
-      <h3>Edge Computing and Serverless</h3>
-      <p>The shift towards edge computing is transforming how we deploy and scale applications. I've implemented edge functions for real-time data processing and global content delivery. In 2025, edge computing will become the standard for applications requiring low latency and global reach.</p>
-      
-      <h3>Emerging Frameworks and Tools</h3>
-      <ul>
-        <li>Bun and Deno gaining mainstream adoption</li>
-        <li>Solid.js and Qwik for ultra-fast web applications</li>
-        <li>Astro for content-focused websites</li>
-        <li>Remix and SvelteKit for full-stack applications</li>
-      </ul>
-      
-      <h3>Sustainability in Web Development</h3>
-      <p>Green web development is becoming increasingly important. I've learned to optimize applications for energy efficiency, from reducing bundle sizes to implementing efficient algorithms. In 2025, sustainability will be a key consideration in every development decision.</p>
-      
-      <h3>Enhanced Developer Experience</h3>
-      <p>The developer experience is improving dramatically with better tooling, faster build times, and more intuitive frameworks. I've witnessed the evolution from complex build configurations to zero-config setups. By 2025, development environments will be even more streamlined and productive.</p>
-      
-      <h3>Security and Privacy</h3>
-      <p>With increasing cyber threats and privacy regulations, security-first development is crucial. I've implemented various security measures including Content Security Policy, secure authentication, and data encryption. In 2025, security will be built into every framework and tool by default.</p>
-      
-      <h3>Preparing for 2025</h3>
-      <p>To stay competitive in 2025, developers should focus on learning AI-assisted development, understanding edge computing, and mastering performance optimization. The ability to work with emerging technologies while maintaining code quality will be essential for success in the evolving web development landscape.</p>
-    `,
-    category: "Emerging Technologies",
-    date: "January 15, 2025",
-    readTime: "14 min read",
-    tags: ["2025", "AI", "WebAssembly", "Edge Computing", "Trends", "Future Tech"]
   }
 ];

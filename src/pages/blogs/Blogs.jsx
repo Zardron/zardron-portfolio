@@ -14,11 +14,6 @@ const Blogs = () => {
 
   const categories = ["All", ...new Set(BLOGS.map(blog => blog.category))];
   
-  // Debug: Log categories and filtered blogs
-  console.log("Available categories:", categories);
-  console.log("Selected category:", selectedCategory);
-  console.log("Filtered blogs:", filteredBlogs);
-
   const filteredBlogs = selectedCategory === "All" 
     ? BLOGS 
     : BLOGS.filter(blog => blog.category === selectedCategory);
