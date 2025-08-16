@@ -22,94 +22,198 @@ import {
   PHP,
   REACT,
   TAILWIND,
+  NEXTJS,
+  TYPESCRIPT,
+  SCSS,
+  MATERIALUI,
+  SHADCNUI,
+  JIRA,
+  DOCKER,
+  GRAPHQL,
+  THREEJS,
+  MYWEAR,
+  EIGHTHWALL,
+  UNREALENGINE,
 } from "../../assets/tech-stack";
 
-const techStackData = [
-  {
-    icon: ASP,
-    title: "Asp.Net",
-  },
-  {
-    icon: BOOTSTRAP,
-    title: "Bootstrap",
-  },
-  {
-    icon: CISCO,
-    title: "Cisco",
-  },
-  {
-    icon: CSHARP,
-    title: "C#",
-  },
-  {
-    icon: EXPRESSJS,
-    title: "ExpressJs",
-  },
-  {
-    icon: FLASH,
-    title: "Adobe Flash",
-  },
-  {
-    icon: FIGMA,
-    title: "Figma",
-  },
-  {
-    icon: GITHUB,
-    title: "GitHub",
-  },
-  {
-    icon: GITLAB,
-    title: "GitLab",
-  },
-  {
-    icon: HTML,
-    title: "HTML",
-  },
-  {
-    icon: ILLUSTRATOR,
-    title: "Illustrator",
-  },
-  {
-    icon: INDESIGN,
-    title: "InDesign",
-  },
-  {
-    icon: JAVASCRIPT,
-    title: "JavaScript",
-  },
-  {
-    icon: LARAVEL,
-    title: "Laravel",
-  },
-  {
-    icon: MONGODB,
-    title: "MongoDB",
-  },
-  {
-    icon: MYSQL,
-    title: "MySQL",
-  },
-  {
-    icon: NODEJS,
-    title: "NodeJs",
-  },
-  {
-    icon: PHOTOSHOP,
-    title: "Photoshop",
-  },
-  {
-    icon: PHP,
-    title: "PHP",
-  },
-  {
-    icon: REACT,
-    title: "ReactJs",
-  },
-  {
-    icon: TAILWIND,
-    title: "Tailwind CSS",
-  },
-];
+const techStackCategories = {
+  frontend: [
+    {
+      icon: HTML,
+      title: "HTML",
+      isImage: true,
+    },
+    {
+      icon: CSS,
+      title: "CSS",
+      isImage: true,
+    },
+    {
+      icon: SCSS,
+      title: "SCSS",
+      isImage: true,
+    },
+    {
+      icon: JAVASCRIPT,
+      title: "JavaScript",
+      isImage: true,
+    },
+    {
+      icon: TYPESCRIPT,
+      title: "TypeScript",
+      isImage: true,
+    },
+    {
+      icon: REACT,
+      title: "ReactJs",
+      isImage: true,
+    },
+    {
+      icon: NEXTJS,
+      title: "NextJS",
+      isImage: true,
+    },
+    {
+      icon: THREEJS,
+      title: "ThreeJS",
+      isImage: true,
+    },
+    {
+      icon: MYWEAR,
+      title: "MyWebAR",
+      isImage: true,
+    },
+    {
+      icon: EIGHTHWALL,
+      title: "8thwall",
+      isImage: true,
+    },
+    {
+      icon: UNREALENGINE,
+      title: "Unreal Engine",
+      isImage: true,
+    },
+    {
+      icon: TAILWIND,
+      title: "Tailwind CSS",
+      isImage: true,
+    },
+    {
+      icon: BOOTSTRAP,
+      title: "Bootstrap",
+      isImage: true,
+    },
+    {
+      icon: MATERIALUI,
+      title: "Material-UI",
+      isImage: true,
+    },
+    {
+      icon: SHADCNUI,
+      title: "Shadcn-UI",
+      isImage: true,
+    },
+  ],
+  backend: [
+    {
+      icon: NODEJS,
+      title: "NodeJs",
+      isImage: true,
+    },
+    {
+      icon: EXPRESSJS,
+      title: "ExpressJs",
+      isImage: true,
+    },
+    {
+      icon: PHP,
+      title: "PHP",
+      isImage: true,
+    },
+    {
+      icon: LARAVEL,
+      title: "Laravel",
+      isImage: true,
+    },
+    {
+      icon: CSHARP,
+      title: "C#",
+      isImage: true,
+    },
+    {
+      icon: ASP,
+      title: "Asp.Net",
+      isImage: true,
+    },
+    {
+      icon: MYSQL,
+      title: "MySQL",
+      isImage: true,
+    },
+    {
+      icon: MONGODB,
+      title: "MongoDB",
+      isImage: true,
+    },
+    {
+      icon: GRAPHQL,
+      title: "GraphQL",
+      isImage: true,
+    },
+  ],
+  others: [
+    {
+      icon: DOCKER,
+      title: "Docker",
+      isImage: true,
+    },
+    {
+      icon: GITHUB,
+      title: "GitHub",
+      isImage: true,
+    },
+    {
+      icon: GITLAB,
+      title: "GitLab",
+      isImage: true,
+    },
+    {
+      icon: JIRA,
+      title: "JIRA",
+      isImage: true,
+    },
+    {
+      icon: CISCO,
+      title: "Cisco",
+      isImage: true,
+    },
+    {
+      icon: FIGMA,
+      title: "Figma",
+      isImage: true,
+    },
+    {
+      icon: PHOTOSHOP,
+      title: "Photoshop",
+      isImage: true,
+    },
+    {
+      icon: ILLUSTRATOR,
+      title: "Illustrator",
+      isImage: true,
+    },
+    {
+      icon: INDESIGN,
+      title: "InDesign",
+      isImage: true,
+    },
+    {
+      icon: FLASH,
+      title: "Adobe Flash",
+      isImage: true,
+    },
+  ],
+};
 
 const TechStack = () => {
   return (
@@ -118,18 +222,78 @@ const TechStack = () => {
         Technology Stack
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center mt-4 gap-3">
-        {techStackData.map((data) => (
-          <div
-            key={data.title}
-            className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
-          >
-            <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
-            <p className="text-white/80 font-light text-sm mt-2">
-              {data.title}
-            </p>
+      <div className="space-y-8">
+        {/* Frontend Section */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4 text-white/90 border-b border-white/20 pb-2">
+            Frontend Technologies
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {techStackCategories.frontend.map((data) => (
+              <div
+                key={data.title}
+                className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
+              >
+                {data.isImage ? (
+                  <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
+                ) : (
+                  <data.icon />
+                )}
+                <p className="text-white/80 font-light text-xs mt-2">
+                  {data.title}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {/* Backend Section */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4 text-white/90 border-b border-white/20 pb-2">
+            Backend Technologies
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {techStackCategories.backend.map((data) => (
+              <div
+                key={data.title}
+                className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
+              >
+                {data.isImage ? (
+                  <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
+                ) : (
+                  <data.icon />
+                )}
+                <p className="text-white/80 font-light text-xs mt-2">
+                  {data.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Others Section */}
+        <div>
+          <h2 className="text-lg font-semibold mb-4 text-white/90 border-b border-white/20 pb-2">
+            Tools & Others
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {techStackCategories.others.map((data) => (
+              <div
+                key={data.title}
+                className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
+              >
+                {data.isImage ? (
+                  <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
+                ) : (
+                  <data.icon />
+                )}
+                <p className="text-white/80 font-light text-xs mt-2">
+                  {data.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

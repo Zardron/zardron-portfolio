@@ -1,147 +1,74 @@
-import React, { useState } from "react";
-import RAK1 from "../../../assets/works/rakonline/1.png";
-import RAK2 from "../../../assets/works/rakonline/2.png";
-import RAK3 from "../../../assets/works/rakonline/3.png";
-import RAK4 from "../../../assets/works/rakonline/4.png";
-import {
-  CSS,
-  EXPRESSJS,
-  HTML,
-  JAVASCRIPT,
-  MONGODB,
-  MYSQL,
-  NODEJS,
-  PHP,
-  REACT,
-  TAILWIND,
-} from "../../../assets/tech-stack";
+import React from "react";
+import RAKONLINE1 from "../../../assets/works/rakonline/1.png";
+import RAKONLINE2 from "../../../assets/works/rakonline/2.png";
+import RAKONLINE3 from "../../../assets/works/rakonline/3.png";
+import RAKONLINE4 from "../../../assets/works/rakonline/4.png";
+import { CSS, HTML, JAVASCRIPT, MYSQL, PHP } from "../../../assets/tech-stack";
 
 const RakOnline = () => {
-  const [grow1, setGrow1] = useState(false);
-  const [grow2, setGrow2] = useState(false);
-  const [grow3, setGrow3] = useState(false);
-  const [grow4, setGrow4] = useState(false);
-
-  const [blur1, setBlur1] = useState(true);
-  const [blur2, setBlur2] = useState(true);
-  const [blur3, setBlur3] = useState(true);
-  const [blur4, setBlur4] = useState(true);
   return (
-    <>
-      <div className="w-full mt-4">
-        <div className="flex items-center">
-          <div
-            className={`h-[150px] lg:h-[250px]  ${
-              grow1 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
-            } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tl-md rounded-bl-md`}
-            onClick={() => {
-              setGrow1(!grow1);
-              setGrow2(false);
-              setGrow3(false);
-              setGrow4(false);
-            }}
-            onMouseEnter={() => {
-              setBlur1(false);
-              setBlur2(true);
-              setBlur3(true);
-              setBlur4(true);
-            }}
-            onMouseLeave={() => setBlur1(true)}
-          >
-            <img
-              src={RAK1}
-              alt=""
-              className={`h-full ${
-                grow1 ? "" : `object-cover ${blur1 ? "blur-sm" : ""}`
-              } rounded-tl-md rounded-bl-md`}
-            />
-          </div>
-          <div
-            className={`h-[150px] lg:h-[250px]  ${
-              grow2 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
-            } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
-            onClick={() => {
-              setGrow1(false);
-              setGrow2(!grow2);
-              setGrow3(false);
-              setGrow4(false);
-            }}
-            onMouseEnter={() => {
-              setBlur1(true);
-              setBlur2(false);
-              setBlur3(true);
-              setBlur4(true);
-            }}
-            onMouseLeave={() => setBlur2(true)}
-          >
-            <img
-              src={RAK2}
-              alt=""
-              className={`h-full ${
-                grow2 ? "" : `object-cover ${blur2 ? "blur-sm" : ""}`
-              }`}
-            />
-          </div>
-          <div
-            className={`h-[150px] lg:h-[250px]  ${
-              grow3 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
-            } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2`}
-            onClick={() => {
-              setGrow1(false);
-              setGrow2(false);
-              setGrow3(!grow3);
-              setGrow4(false);
-            }}
-            onMouseEnter={() => {
-              setBlur1(true);
-              setBlur2(true);
-              setBlur3(false);
-              setBlur4(true);
-            }}
-            onMouseLeave={() => setBlur3(true)}
-          >
-            <img
-              src={RAK3}
-              alt=""
-              className={`h-full ${
-                grow3 ? "" : `object-cover ${blur3 ? "blur-sm" : ""}`
-              }`}
-            />
-          </div>
-          <div
-            className={`h-[150px] lg:h-[250px]  ${
-              grow4 ? "w-[110vw] lg:w-[78vw]" : "w-1/4"
-            } transition-all ease-linear duration-200 border-white/80 cursor-pointer border-2 rounded-tr-md rounded-br-md`}
-            onClick={() => {
-              setGrow1(false);
-              setGrow2(false);
-              setGrow3(false);
-              setGrow4(!grow4);
-            }}
-            onMouseEnter={() => {
-              setBlur1(true);
-              setBlur2(true);
-              setBlur3(true);
-              setBlur4(false);
-            }}
-            onMouseLeave={() => setBlur4(true)}
-          >
-            <img
-              src={RAK4}
-              alt=""
-              className={`h-full ${
-                grow4 ? "" : `object-cover ${blur4 ? "blur-sm" : ""}`
-              } rounded-tr-md rounded-br-md`}
-            />
+    <div className="bg-gray-50/10 rounded-lg p-6 border border-gray-50/20">
+      <div className="flex items-center gap-4 mb-6">
+        <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center">
+          <img
+            src={RAKONLINE1}
+            alt="RakOnline Logo"
+            className="w-full h-full object-contain"
+          />
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold text-white/90">RakOnline</h2>
+          <p className="text-white/70">Web Developer</p>
+          <p className="text-sm text-white/60">2022 - 2023</p>
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <div>
+          <h3 className="text-lg font-semibold text-white/90 mb-2">Key Responsibilities</h3>
+          <ul className="space-y-2 text-white/80">
+            <li className="flex items-start">
+              <span className="text-blue-400 mr-2 mt-1">•</span>
+              Developed e-commerce web applications and online platforms
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-400 mr-2 mt-1">•</span>
+              Implemented responsive design for mobile and desktop compatibility
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-400 mr-2 mt-1">•</span>
+              Created and maintained database systems for online applications
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-400 mr-2 mt-1">•</span>
+              Integrated payment gateways and shopping cart functionality
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-400 mr-2 mt-1">•</span>
+              Optimized website performance and user experience
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold text-white/90 mb-2">Project Gallery</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-gray-50/5 rounded-lg p-2">
+              <img src={RAKONLINE1} alt="Project 1" className="w-full h-24 object-cover rounded" />
+            </div>
+            <div className="bg-gray-50/5 rounded-lg p-2">
+              <img src={RAKONLINE2} alt="Project 2" className="w-full h-24 object-cover rounded" />
+            </div>
+            <div className="bg-gray-50/5 rounded-lg p-2">
+              <img src={RAKONLINE3} alt="Project 3" className="w-full h-24 object-cover rounded" />
+            </div>
+            <div className="bg-gray-50/5 rounded-lg p-2">
+              <img src={RAKONLINE4} alt="Project 4" className="w-full h-24 object-cover rounded" />
+            </div>
           </div>
         </div>
-        <h1 className="text-lg mt-2 dark:text-white/80">RAKtherm Online</h1>
-        <h1 className="text-base font-thin dark:text-white/80">
-          A web application that allows the employee to send SMS notification to
-          update the customers regarding on their orders.
-        </h1>
 
-        <div className="flex flex-col lg:flex-row text-base dark:text-white/80 mt-1">
+        <div className="flex flex-col lg:flex-row text-base text-white/80 mt-4">
           <div className="w-full lg:w-1/6 font-thin flex items-center justify-normal lg:justify-between mr-2">
             Tech Stack <span>:</span>{" "}
           </div>
@@ -165,39 +92,21 @@ const RakOnline = () => {
               title="JAVASCRIPT"
             />
             <img
-              src={REACT}
+              src={PHP}
               alt="tech-stack logo"
               className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="REACTJS"
+              title="PHP"
             />
             <img
-              src={TAILWIND}
+              src={MYSQL}
               alt="tech-stack logo"
               className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="TAILWIND CSS"
-            />
-            <img
-              src={EXPRESSJS}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="EXPRESSJS"
-            />
-            <img
-              src={NODEJS}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="NODEJS"
-            />
-            <img
-              src={MONGODB}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="MONGODB"
+              title="MYSQL"
             />
           </div>
         </div>
 
-        <div className="flex text-base dark:text-white/80">
+        <div className="flex text-base text-white/80">
           <div className="w-1/6 font-thin flex items-center justify-between mr-2">
             Link <span>:</span>{" "}
           </div>
@@ -209,8 +118,19 @@ const RakOnline = () => {
             https://online.raktherm.com/
           </a>
         </div>
+
+        <div>
+          <h3 className="text-lg font-semibold text-white/90 mb-2">Project Highlights</h3>
+          <div className="bg-gray-50/5 rounded-lg p-4">
+            <p className="text-white/70 text-sm italic">
+              "Built comprehensive e-commerce solutions and online platforms for RakOnline, 
+              focusing on user experience and performance optimization. Developed secure payment 
+              systems and responsive web applications that drive business growth."
+            </p>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
