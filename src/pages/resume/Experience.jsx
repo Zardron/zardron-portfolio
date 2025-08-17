@@ -7,18 +7,18 @@ import NINETYSIX from "../../assets/ninetysix.jpg";
 import LEAR from "../../assets/lear.jpg";
 import NAGARRO from "../../assets/tech-stack/nagarro.png";
 import RIPECONCEPTS from "../../assets/tech-stack/ripeconcepts.png";
-import ENTERPRISE from "../../assets/enterprise.png";
+import ICERED from "../../assets/1630654677054.jpeg";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 // Map company slugs to their logo images
 const companyLogos = {
-  freelance: ENTERPRISE,
+  icered: ICERED,
   nagarro: NAGARRO,
   ripeconcepts: RIPECONCEPTS,
   raktherm: RAKTHERM,
   clockwork: CLOCKWORK,
   acn: ACCENTURE,
-  ns: NINETYSIX,
+  ninetysix: NINETYSIX,
   lear: LEAR,
 };
 
@@ -38,7 +38,7 @@ const Experience = () => {
 
   return (
     <div className="mt-4">
-      <h1 className="text-xl font-bold mb-2 dark:text-white/80">Experience</h1>
+      <h1 className="text-xl font-bold mb-2 text-readable">Experience</h1>
 
       <div className="flex flex-col gap-2">
         {EXPERIENCE.map((experience, index) => (
@@ -55,26 +55,26 @@ const Experience = () => {
 
             <div className="w-[85%]">
               <div className="flex items-center justify-between">
-                <p className="text-sm sm:text-[11px] lg:text-sm xl:text-lg font-medium text-white/80">
+                <p className="text-sm sm:text-[11px] lg:text-sm xl:text-lg font-medium text-readable">
                   {experience.position}
                 </p>
               </div>
-              <p className="text-[10px] sm:text-[11px] lg:text-xs xl:text-sm text-white/80 font-light">
+              <p className="text-[10px] sm:text-[11px] lg:text-xs xl:text-sm text-readable-light font-light">
                 {experience.companyName}
               </p>
               <div
                 className={`${
                   readMore[experience.slug] ? "max-h-96 mb-2" : "max-h-0"
-                } overflow-hidden transition-all ease-linear duration-300 text-[10px] xl:text-sm text-white/80 font-light`}
+                } overflow-hidden transition-all ease-linear duration-300 text-[10px] xl:text-sm text-readable-light font-light`}
               >
                 <p>{experience.address}</p>
                 <p>{experience.duration}</p>
 
-                <div className="pt-4 text-[10px] xl:text-sm text-white/80 font-light">
-                  <p className="font-medium">Responsibilities:</p>
+                <div className="pt-4 text-[10px] xl:text-sm text-readable-light font-light">
+                  <p className="font-medium text-readable">Responsibilities:</p>
                   {experience.responsibilities.map((responsibility, respIndex) => (
                     <div key={respIndex} className="flex items-start">
-                      <span className="text-white/80 mr-2 flex-shrink-0">▪</span>
+                      <span className="text-readable-light mr-2 flex-shrink-0">▪</span>
                       <div className="flex-1">
                         {responsibility.desc}
                       </div>
@@ -83,7 +83,7 @@ const Experience = () => {
                 </div>
               </div>
               <p
-                className="text-[10px] text-blue-300 flex flex-row items-center cursor-pointer xl:text-base"
+                className="text-[10px] text-blue-300 flex flex-row items-center cursor-pointer xl:text-base hover:text-blue-200 transition-colors"
                 onClick={() => toggleReadMore(experience.slug)}
               >
                 {readMore[experience.slug] ? (

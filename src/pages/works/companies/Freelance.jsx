@@ -1,5 +1,5 @@
 import React from "react";
-import FreelanceLogo from "../../../assets/enterprise.png";
+import FreelanceLogo from "../../../assets/1630654677054.jpeg";
 
 const Freelance = () => {
   return (
@@ -13,10 +13,10 @@ const Freelance = () => {
           />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-white/90">Freelance Full-Stack Developer</h2>
-          <p className="text-white/70">Self-Employed</p>
+          <h2 className="text-2xl font-bold text-white/90">Full-Stack Developer</h2>
+          <p className="text-white/70">Icered</p>
           <p className="text-sm text-white/60">Jul 2025 - Present</p>
-          <p className="text-sm text-white/60">Remote · Worldwide</p>
+          <p className="text-sm text-white/60">Remote · California, USA</p>
         </div>
       </div>
 

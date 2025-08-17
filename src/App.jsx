@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
-    <div className="h-full w-full bg-[#030014]">
+    <div className="h-screen w-full bg-[#030014] overflow-hidden">
       <StarsCanvas />
 
       <BrowserRouter>

@@ -1,10 +1,10 @@
 export const EXPERIENCE = [
   {
-    position: "Freelance Full-Stack Developer",
-    companyName: "Self-Employed",
-    address: "Remote · Worldwide",
-    duration: "Jul 2025 - Present",
-    slug: "freelance",
+    position: "Full Stack Developer",
+    companyName: "Icered",
+    address: "California, United States · Remote",
+    duration: "May 2025 - Present · 4 mos",
+    slug: "icered",
     responsibilities: [
       {
         desc: "Develop custom web applications and websites for clients across various industries.",
@@ -37,7 +37,7 @@ export const EXPERIENCE = [
     position: "Senior Engineer",
     companyName: "Nagarro",
     address: "India & UAE · Remote",
-    duration: "Jun 2024 - Jul 2025 (1 yr 2 mos)",
+    duration: "Jun 2024 - Jul 2025 · 1 yr 2 mos",
     slug: "nagarro",
     responsibilities: [
       {
@@ -66,9 +66,9 @@ export const EXPERIENCE = [
 
   {
     position: "Senior Application Developer",
-    companyName: "RipeConcepts, Inc. (Nagarro Company)",
+    companyName: "RipeConcepts, Inc.",
     address: "Cebu, Central Visayas, Philippines · On-site",
-    duration: "Jun 2024 - Jul 2025 (1 yr 2 mos)",
+    duration: "Jun 2024 - Jul 2025 · 1 yr 2 mos",
     slug: "ripeconcepts",
     responsibilities: [
       {
@@ -97,9 +97,9 @@ export const EXPERIENCE = [
 
   {
     position: "Web Developer",
-    companyName: "RAKtherm Ultimate Piping Solution",
-    address: "Cebu, Central Visayas, Philippines",
-    duration: "October 2022 - May 2024 (1 yr 8 mos)",
+    companyName: "RAKtherm Global (Plumbing)",
+    address: "Al Jazirah Al Hamra, Ras al-Khaimah, United Arab Emirates · On-site",
+    duration: "Oct 2022 - Apr 2024 · 1 yr 7 mos",
     slug: "raktherm",
     responsibilities: [
       {
@@ -131,9 +131,9 @@ export const EXPERIENCE = [
 
   {
     position: "ReactJs Developer",
-    companyName: "Clockwork Logistic System",
+    companyName: "Clockwork Logistics Systems",
     address: "Cebu, Central Visayas, Philippines",
-    duration: "March 2022 - September 2022 (Full-time)",
+    duration: "Jul 2022 - Oct 2022 · 4 mos",
     slug: "clockwork",
     responsibilities: [
       {
@@ -156,9 +156,9 @@ export const EXPERIENCE = [
 
   {
     position: "Web Developer",
-    companyName: "Ninety Six Group",
-    address: "Cebu, Central Visayas, Philippines",
-    duration: "January 2022 - February 2022 (Full-time)",
+    companyName: "Ninety Six Back Office Operations Services",
+    address: "Philippines",
+    duration: "Feb 2021 - Jul 2021 · 6 mos",
     slug: "ninetysix",
     responsibilities: [
       {
@@ -180,10 +180,35 @@ export const EXPERIENCE = [
   },
 
   {
+    position: "Software Engineer",
+    companyName: "Accenture",
+    address: "Cebu, Central Visayas, Philippines",
+    duration: "Jul 2021 - Jul 2022 · 1 yr 1 mo",
+    slug: "acn",
+    responsibilities: [
+      {
+        desc: "Develop and maintain enterprise-level web applications.",
+      },
+      {
+        desc: "Collaborate with cross-functional teams to deliver high-quality software solutions.",
+      },
+      {
+        desc: "Implement best practices for code quality and software development.",
+      },
+      {
+        desc: "Participate in agile development processes and sprint planning.",
+      },
+      {
+        desc: "Provide technical support and troubleshooting for production systems.",
+      },
+    ],
+  },
+
+  {
     position: "Web Developer",
     companyName: "Lear Corporation",
-    address: "Cebu, Central Visayas, Philippines",
-    duration: "November 2021 - December 2021 (Full-time)",
+    address: "Central Visayas, Philippines",
+    duration: "Apr 2019 - Dec 2020 · 1 yr 9 mos",
     slug: "lear",
     responsibilities: [
       {

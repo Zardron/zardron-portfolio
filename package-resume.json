@@ -1,0 +1,21 @@
+{
+  "name": "zardron-resume-generator",
+  "version": "1.0.0",
+  "description": "PDF Resume Generator for Zardron Pesquera",
+  "main": "generate-pdf.js",
+  "scripts": {
+    "generate": "node generate-pdf.js",
+    "install-deps": "npm install puppeteer"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "keywords": [
+    "resume",
+    "pdf",
+    "generator",
+    "puppeteer"
+  ],
+  "author": "Zardron Pesquera",
+  "license": "MIT"
+}

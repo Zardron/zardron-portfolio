@@ -22,13 +22,13 @@ const index = () => {
   return (
     <div className="w-full relative">
       <ProfilePicture />
-      <div className="pt-20 p-4">
+      <div className="pt-16 sm:pt-20 p-3 sm:p-4">
         <NameAndTitle />
         <SocialMedia />
         <BasicDetails />
       </div>
 
-      <div className="flex items-center justify-center mb-6 mt-2">
+      <div className="flex items-center justify-center mb-4 sm:mb-6 mt-2 px-3 sm:px-4">
         <Button
           color="bg-[#1e5799] text-white font-light border-gray-50/70 hover:bg-blue-500 gap-1"
           type="button"
@@ -36,9 +36,9 @@ const index = () => {
           clickHandler={handleDownload}
           icon={
             loading ? (
-              <ClipLoader color="#fff" size={25} />
+              <ClipLoader color="#fff" size={20} className="sm:w-6 sm:h-6" />
             ) : (
-              <GoDownload size={20} />
+              <GoDownload size={18} className="sm:w-5 sm:h-5" />
             )
           }
           name={loading ? <>Please wait . . . </> : "Download Resume"}
