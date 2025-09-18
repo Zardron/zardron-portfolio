@@ -78,7 +78,7 @@ To modify the resume:
 ## 📞 Contact Information
 
 - **Email**: zardron.pesquera1993@gmail.com
-- **Phone**: +63 908 255 7805
+- **Phone**: +63 976 218 5524
 - **Location**: Lapu-Lapu City, Cebu, Philippines
 
 ---

@@ -25,13 +25,10 @@ import {
   NEXTJS,
   TYPESCRIPT,
   SCSS,
-  MATERIALUI,
-  SHADCNUI,
   JIRA,
   DOCKER,
   GRAPHQL,
   THREEJS,
-  MYWEAR,
   EIGHTHWALL,
   UNREALENGINE,
 } from "../../assets/tech-stack";
@@ -79,11 +76,6 @@ const techStackCategories = {
       isImage: true,
     },
     {
-      icon: MYWEAR,
-      title: "MyWebAR",
-      isImage: true,
-    },
-    {
       icon: EIGHTHWALL,
       title: "8thwall",
       isImage: true,
@@ -101,16 +93,6 @@ const techStackCategories = {
     {
       icon: BOOTSTRAP,
       title: "Bootstrap",
-      isImage: true,
-    },
-    {
-      icon: MATERIALUI,
-      title: "Material-UI",
-      isImage: true,
-    },
-    {
-      icon: SHADCNUI,
-      title: "Shadcn-UI",
       isImage: true,
     },
   ],

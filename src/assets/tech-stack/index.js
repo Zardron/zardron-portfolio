@@ -24,13 +24,10 @@ import FIGMA from "./figma.png";
 import NEXTJS from "./nextjs.png";
 import TYPESCRIPT from "./typescript.png";
 import SCSS from "./scss.png";
-import MATERIALUI from "./material-ui.png";
-import SHADCNUI from "./shadcn-ui.png";
 import JIRA from "./jira.png";
 import DOCKER from "./docker.png";
 import GRAPHQL from "./graphql.png";
 import THREEJS from "./threejs.png";
-import MYWEAR from "./mywebar.png";
 import EIGHTHWALL from "./8thwall.png";
 import UNREALENGINE from "./unreal-engine.png";
 
@@ -60,13 +57,10 @@ export {
   NEXTJS,
   TYPESCRIPT,
   SCSS,
-  MATERIALUI,
-  SHADCNUI,
   JIRA,
   DOCKER,
   GRAPHQL,
   THREEJS,
-  MYWEAR,
   EIGHTHWALL,
   UNREALENGINE,
 };

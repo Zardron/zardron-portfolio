@@ -15,7 +15,7 @@ const BasicDetails = () => {
             Mobile
           </p>
           <p className="text-[10px] sm:text-xs md:text-sm font-light tracking-tight dark:text-white/80 break-all">
-            +63 908 255 7805
+            +63 976 218 5524
           </p>
         </div>
       </div>
