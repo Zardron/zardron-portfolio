@@ -3,7 +3,7 @@ export const EXPERIENCE = [
     position: "Full Stack Developer",
     companyName: "Icered",
     address: "California, United States · Remote",
-    duration: "May 2025 - Nov 2025",
+    duration: "May 2025 - Nov 2025 · 6 mos",
     slug: "icered",
     responsibilities: [
       {
