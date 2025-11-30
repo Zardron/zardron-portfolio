@@ -22,7 +22,7 @@ const index = ({ scrollNow, setScrollNow }) => {
   screenSize.width >= 600 ? "" : scrollNow ? ScrollToContent() : "";
 
   return (
-    <div className="p-6 mt-4">
+    <div className="p-6">
       <div className="flex items-center justify-between gap-5">
         <div>
           <h1 className="text-4xl lg:text-5xl font-semibold tracking-tight">
