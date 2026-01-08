@@ -67,7 +67,25 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
   }, []);
 
   const handleExpand = () => {
-    setIsCollapsed(false);
+    // Smooth scroll to top first
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    
+    // Wait for scroll to complete, then expand menu
+    const checkScroll = setInterval(() => {
+      if (window.scrollY === 0 || window.pageYOffset === 0) {
+        clearInterval(checkScroll);
+        setIsCollapsed(false);
+      }
+    }, 50);
+    
+    // Fallback: expand menu after max scroll duration (1 second)
+    setTimeout(() => {
+      clearInterval(checkScroll);
+      setIsCollapsed(false);
+    }, 1000);
   };
 
   return (
