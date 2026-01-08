@@ -21,7 +21,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-bottom: 100px; /* Increased padding for larger navigation */
 }
 
 /* Improved touch targets for mobile */
@@ -339,6 +338,24 @@ a,
   /* Ensure it's always visible */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
+  /* Smooth transitions */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animation for menu items */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav > div {
+  animation: slideUp 0.3s ease-out;
 }
 
 /* Safe area handling for devices with notches */
