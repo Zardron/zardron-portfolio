@@ -1,13 +1,16 @@
 export const EXPERIENCE = [
   {
-    position: "Full Stack Developer",
-    companyName: "Icered",
-    address: "California, United States · Remote",
-    duration: "May 2025 - Nov 2025 · 6 mos",
+    position: "Full-Stack Developer",
+    companyName: "Freelance",
+    address: "Remote",
+    duration: "May 2025 - Present",
     slug: "icered",
     responsibilities: [
       {
-        desc: "Develop custom web applications and websites for clients across various industries.",
+        desc: "Work independently as a freelance developer, managing multiple client projects simultaneously.",
+      },
+      {
+        desc: "Develop custom web applications and websites for diverse clients across various industries.",
       },
       {
         desc: "Create responsive and modern user interfaces using React.js, TypeScript, and modern CSS frameworks.",
@@ -22,10 +25,13 @@ export const EXPERIENCE = [
         desc: "Manage MongoDB databases and implement efficient data models and queries.",
       },
       {
+        desc: "Handle client communications, project scoping, and deliver high-quality solutions within agreed timelines.",
+      },
+      {
         desc: "Provide technical consulting and development services for startups and established businesses.",
       },
       {
-        desc: "Manage project timelines, client communications, and deliver high-quality solutions on schedule.",
+        desc: "Manage project timelines, budgets, and client expectations independently.",
       },
       {
         desc: "Optimize application performance and ensure cross-platform compatibility.",

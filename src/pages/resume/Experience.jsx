@@ -7,12 +7,12 @@ import NINETYSIX from "../../assets/ninetysix.jpg";
 import LEAR from "../../assets/lear.jpg";
 import NAGARRO from "../../assets/tech-stack/nagarro.png";
 import RIPECONCEPTS from "../../assets/tech-stack/ripeconcepts.png";
-import ICERED from "../../assets/1630654677054.jpeg";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import { BuildingOfficeIcon } from "@heroicons/react/24/outline";
 
 // Map company slugs to their logo images
 const companyLogos = {
-  icered: ICERED,
+  icered: null, // Generic logo will be rendered as icon
   nagarro: NAGARRO,
   ripeconcepts: RIPECONCEPTS,
   raktherm: RAKTHERM,
@@ -45,11 +45,15 @@ const Experience = () => {
           <div key={index} className="flex flex-row gap-2 bg-gray-50/20 p-2 rounded-md">
             <div className="w-[15%] flex flex-col items-center">
               <div className="bg-white rounded-md p-2 h-[50px] w-full xl:h-[75px] flex items-center justify-center">
-                <img 
-                  src={companyLogos[experience.slug]} 
-                  alt={`${experience.companyName}-logo`} 
-                  className="h-full rounded-md object-contain"
-                />
+                {companyLogos[experience.slug] ? (
+                  <img 
+                    src={companyLogos[experience.slug]} 
+                    alt={`${experience.companyName}-logo`} 
+                    className="h-full rounded-md object-contain"
+                  />
+                ) : (
+                  <BuildingOfficeIcon className="w-full h-full text-gray-600" />
+                )}
               </div>
             </div>
 
