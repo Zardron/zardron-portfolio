@@ -33,10 +33,8 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
           if (scrollDelta > 10) {
             // Scrolling down - collapse menu
             setIsCollapsed(true);
-          } else if (scrollDelta < -10) {
-            // Scrolling up - expand menu
-            setIsCollapsed(false);
           }
+          // Don't expand menu when scrolling up - keep it collapsed
         } else {
           // Near top - always show menu
           setIsCollapsed(false);
@@ -73,31 +71,29 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
   };
 
   return (
-    <div 
-      className={`mobile-nav w-full block md:hidden fixed bottom-0 left-0 right-0 z-50 shadow-lg pb-safe transition-all duration-300 ease-in-out ${
-        isCollapsed ? 'translate-y-0' : 'translate-y-0'
-      }`}
-    >
-      {/* Collapsed state - just show expand button */}
+    <>
+      {/* Manual expand button - shows when menu is collapsed */}
+      {isCollapsed && (
+        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 block md:hidden">
+          <button
+            onClick={handleExpand}
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[#1e5799] to-[#0076ff] border-2 border-[#0076ff]/50 text-white shadow-2xl hover:bg-gradient-to-br hover:from-[#0076ff] hover:to-[#1e5799] hover:scale-110 active:scale-95 transition-all duration-300 hover:shadow-[#0076ff]/50"
+            aria-label="Expand menu"
+          >
+            <MdKeyboardArrowUp size={20} className="animate-bounce" />
+          </button>
+        </div>
+      )}
+
+      {/* Main menu */}
       <div 
-        className={`flex justify-center items-center transition-all duration-300 ease-in-out ${
-          isCollapsed ? 'opacity-100 h-auto py-2' : 'opacity-0 h-0 py-0 pointer-events-none'
-        } border-t border-white/5 bg-gradient-to-t from-black/40 via-black/30 to-transparent backdrop-blur-xl`}
+        className={`mobile-nav w-full block md:hidden fixed bottom-0 left-0 right-0 z-50 shadow-lg pb-safe transition-all duration-300 ease-in-out ${
+          isCollapsed ? 'translate-y-full opacity-0 pointer-events-none' : 'translate-y-0 opacity-100'
+        }`}
       >
-        <button
-          onClick={handleExpand}
-          className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-[#1e5799] to-[#0076ff] border-2 border-[#0076ff]/50 text-white shadow-2xl hover:bg-gradient-to-br hover:from-[#0076ff] hover:to-[#1e5799] hover:scale-110 active:scale-95 transition-all duration-300 hover:shadow-[#0076ff]/50"
-          aria-label="Expand menu"
-        >
-          <MdKeyboardArrowUp size={28} className="animate-bounce" />
-        </button>
-      </div>
-      
-      {/* Expanded state - show full menu */}
+      {/* Full menu */}
       <div 
-        className={`flex flex-row items-center justify-center gap-2 sm:gap-3 transition-all duration-300 ease-in-out ${
-          isCollapsed ? 'opacity-0 h-0 py-0 pointer-events-none' : 'opacity-100 h-auto py-3 sm:py-4'
-        } border-t border-white/5 bg-gradient-to-t from-black/40 via-black/30 to-transparent backdrop-blur-xl`}
+        className="flex flex-row items-center justify-center gap-2 sm:gap-3 py-3 sm:py-4 border-t border-white/5 bg-gradient-to-t from-black/40 via-black/30 to-transparent backdrop-blur-xl"
       >
           <div
             className={`flex flex-col items-center justify-center py-2.5 px-2.5 sm:py-3 sm:px-3 w-14 sm:w-16 border-2 ${
@@ -108,7 +104,6 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             onClick={() => {
               setActivePage("about");
               setScrollNow(true);
-              setIsCollapsed(false);
             }}
           >
             <img src={ABOUT} alt="About" className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300" />
@@ -126,7 +121,6 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             onClick={() => {
               setActivePage("resume");
               setScrollNow(true);
-              setIsCollapsed(false);
             }}
           >
             <img src={RESUME} alt="Resume" className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300" />
@@ -144,7 +138,6 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             onClick={() => {
               setActivePage("works");
               setScrollNow(true);
-              setIsCollapsed(false);
             }}
           >
             <img src={WORKS} alt="Works" className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300" />
@@ -162,7 +155,6 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             onClick={() => {
               setActivePage("blogs");
               setScrollNow(true);
-              setIsCollapsed(false);
             }}
           >
             <img src={BLOGS} alt="Blogs" className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300" />
@@ -180,7 +172,6 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
             onClick={() => {
               setActivePage("contact");
               setScrollNow(true);
-              setIsCollapsed(false);
             }}
           >
             <img src={CONTACT} alt="Contact" className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300" />
@@ -190,6 +181,7 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
           </div>
       </div>
     </div>
+    </>
   );
 };
 
