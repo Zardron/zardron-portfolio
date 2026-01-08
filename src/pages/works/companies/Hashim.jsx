@@ -137,41 +137,17 @@ const Hashim = () => {
           Website for Hashim Industry Group based in Saudi Arabia.
         </h1>
 
-        <div className="flex flex-col lg:flex-row text-base dark:text-white/80 mt-1">
-          <div className="w-full lg:w-1/6 font-thin flex items-center justify-normal lg:justify-between mr-2">
-            Tech Stack <span>:</span>{" "}
-          </div>
-          <div className="flex flex-wrap items-start gap-2 my-2 lg:my-0">
-            <img
-              src={HTML}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="HTML"
-            />
-            <img
-              src={CSS}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="CSS"
-            />
-            <img
-              src={JAVASCRIPT}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="JAVASCRIPT"
-            />
-            <img
-              src={REACT}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="REACTJS"
-            />
-            <img
-              src={TAILWIND}
-              alt="tech-stack logo"
-              className="w-9 h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="TAILWIND CSS"
-            />
+        <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg p-4 border border-blue-500/20 mt-4">
+          <h3 className="text-lg font-semibold dark:text-white/90 mb-3 flex items-center gap-2">
+            <span className="text-blue-400">⚡</span>
+            Technologies & Tools
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            <span className="px-4 py-2 bg-gradient-to-r from-orange-500/30 to-orange-600/30 text-orange-200 rounded-lg text-sm font-medium border border-orange-400/30 shadow-lg shadow-orange-500/20">HTML</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">CSS</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-yellow-500/30 to-yellow-600/30 text-yellow-200 rounded-lg text-sm font-medium border border-yellow-400/30 shadow-lg shadow-yellow-500/20">JavaScript</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/30 to-cyan-600/30 text-cyan-200 rounded-lg text-sm font-medium border border-cyan-400/30 shadow-lg shadow-cyan-500/20">React.js</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/30 to-cyan-600/30 text-cyan-200 rounded-lg text-sm font-medium border border-cyan-400/30 shadow-lg shadow-cyan-500/20">Tailwind CSS</span>
           </div>
         </div>
 

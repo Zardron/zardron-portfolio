@@ -68,41 +68,17 @@ const Raktherm = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row text-sm sm:text-base text-white/80 mt-4">
-          <div className="w-full lg:w-1/6 font-thin flex items-center justify-start lg:justify-between mr-2 mb-2 lg:mb-0">
-            Tech Stack <span className="ml-1">:</span>{" "}
-          </div>
-          <div className="flex flex-wrap items-start gap-2 my-2 lg:my-0">
-            <img
-              src={HTML}
-              alt="HTML"
-              className="w-8 h-8 sm:w-9 sm:h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="HTML"
-            />
-            <img
-              src={CSS}
-              alt="CSS"
-              className="w-8 h-8 sm:w-9 sm:h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="CSS"
-            />
-            <img
-              src={JAVASCRIPT}
-              alt="JavaScript"
-              className="w-8 h-8 sm:w-9 sm:h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="JavaScript"
-            />
-            <img
-              src={PHP}
-              alt="PHP"
-              className="w-8 h-8 sm:w-9 sm:h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="PHP"
-            />
-            <img
-              src={MYSQL}
-              alt="MySQL"
-              className="w-8 h-8 sm:w-9 sm:h-9 hover:scale-125 transition-all ease-in-out duration-300 bg-gray-300 p-1 rounded-md"
-              title="MySQL"
-            />
+        <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg p-4 border border-blue-500/20">
+          <h3 className="text-base sm:text-lg font-semibold text-white/90 mb-3 flex items-center gap-2">
+            <span className="text-blue-400">⚡</span>
+            Technologies & Tools
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            <span className="px-4 py-2 bg-gradient-to-r from-orange-500/30 to-orange-600/30 text-orange-200 rounded-lg text-sm font-medium border border-orange-400/30 shadow-lg shadow-orange-500/20">HTML</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">CSS</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-yellow-500/30 to-yellow-600/30 text-yellow-200 rounded-lg text-sm font-medium border border-yellow-400/30 shadow-lg shadow-yellow-500/20">JavaScript</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-indigo-500/30 to-indigo-600/30 text-indigo-200 rounded-lg text-sm font-medium border border-indigo-400/30 shadow-lg shadow-indigo-500/20">PHP</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-green-500/30 to-green-600/30 text-green-200 rounded-lg text-sm font-medium border border-green-400/30 shadow-lg shadow-green-500/20">MySQL</span>
           </div>
         </div>
 

@@ -71,15 +71,18 @@ const Nagarro = () => {
           </ul>
         </div>
 
-        <div>
-          <h3 className="text-lg font-semibold text-white/90 mb-2">Technologies & Tools</h3>
+        <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg p-4 border border-blue-500/20">
+          <h3 className="text-lg font-semibold text-white/90 mb-3 flex items-center gap-2">
+            <span className="text-blue-400">⚡</span>
+            Technologies & Tools
+          </h3>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Frontend Development</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Backend Development</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Technical Support</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Cross-team Collaboration</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Knowledge Transfer</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Project Handoffs</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">Frontend Development</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-green-500/30 to-green-600/30 text-green-200 rounded-lg text-sm font-medium border border-green-400/30 shadow-lg shadow-green-500/20">Backend Development</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">Technical Support</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-purple-500/30 to-purple-600/30 text-purple-200 rounded-lg text-sm font-medium border border-purple-400/30 shadow-lg shadow-purple-500/20">Cross-team Collaboration</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/30 to-cyan-600/30 text-cyan-200 rounded-lg text-sm font-medium border border-cyan-400/30 shadow-lg shadow-cyan-500/20">Knowledge Transfer</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">Project Handoffs</span>
           </div>
         </div>
 
