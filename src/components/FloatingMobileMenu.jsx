@@ -28,8 +28,8 @@ const FloatingMobileMenu = ({ activePage, setActivePage, setScrollNow }) => {
         const currentScrollY = getScrollPosition();
         const scrollDelta = currentScrollY - lastScrollY.current;
         
-        // Only collapse/expand if scrolled more than 50px from top
-        if (currentScrollY > 50) {
+        // Only collapse/expand if scrolled more than 20px from top
+        if (currentScrollY > 20) {
           if (scrollDelta > 10) {
             // Scrolling down - collapse menu
             setIsCollapsed(true);
