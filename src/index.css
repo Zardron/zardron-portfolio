@@ -17,8 +17,14 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   overflow-x: hidden;
+  overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -358,11 +364,5 @@ a,
   animation: slideUp 0.3s ease-out;
 }
 
-/* Safe area handling for devices with notches */
-@supports (padding: max(0px)) {
-  .mobile-nav {
-    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
-  }
-}
 
 /* WORKS */
