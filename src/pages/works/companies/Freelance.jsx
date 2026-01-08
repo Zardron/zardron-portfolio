@@ -30,19 +30,23 @@ const Freelance = () => {
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2 mt-1">•</span>
-              Create responsive and modern user interfaces using React.js, TypeScript, and modern CSS frameworks
+              Build responsive and modern user interfaces using React.js and Next.js with TypeScript, CSS3, Tailwind CSS, shadcn/ui, and styled-components
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2 mt-1">•</span>
-              Build robust backend systems using Node.js, Express.js, and TypeScript for RESTful API development
+              Create server-side rendered and static applications using Next.js for optimal performance and SEO
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2 mt-1">•</span>
-              Design and implement GraphQL APIs for efficient data fetching and real-time updates
+              Develop robust backend systems using Node.js and TypeScript for RESTful API development
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2 mt-1">•</span>
-              Manage MongoDB databases and implement efficient data models and queries
+              Design and manage MongoDB databases, implementing efficient data models, schemas, and queries
+            </li>
+            <li className="flex items-start">
+              <span className="text-blue-400 mr-2 mt-1">•</span>
+              Integrate Supabase for authentication, real-time databases, and backend-as-a-service functionality
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2 mt-1">•</span>
@@ -54,25 +58,27 @@ const Freelance = () => {
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2 mt-1">•</span>
-              Manage project timelines, budgets, and client expectations independently
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-400 mr-2 mt-1">•</span>
-              Optimize application performance and ensure cross-platform compatibility
+              Optimize application performance, ensure cross-platform compatibility, and implement best practices
             </li>
           </ul>
         </div>
 
-        <div>
-          <h3 className="text-lg font-semibold text-white/90 mb-2">Technologies & Tools</h3>
+        <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg p-4 border border-blue-500/20">
+          <h3 className="text-lg font-semibold text-white/90 mb-3 flex items-center gap-2">
+            <span className="text-blue-400">⚡</span>
+            Technologies & Tools
+          </h3>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">React.js</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">TypeScript</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Node.js</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Express.js</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">MongoDB</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">GraphQL</span>
-            <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm">Full-Stack Development</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">React.js</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">Next.js</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-green-500/30 to-green-600/30 text-green-200 rounded-lg text-sm font-medium border border-green-400/30 shadow-lg shadow-green-500/20">Node.js</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-green-500/30 to-green-600/30 text-green-200 rounded-lg text-sm font-medium border border-green-400/30 shadow-lg shadow-green-500/20">MongoDB</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-green-500/30 to-green-600/30 text-green-200 rounded-lg text-sm font-medium border border-green-400/30 shadow-lg shadow-green-500/20">Supabase</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-blue-500/30 to-blue-600/30 text-blue-200 rounded-lg text-sm font-medium border border-blue-400/30 shadow-lg shadow-blue-500/20">TypeScript</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-pink-500/30 to-pink-600/30 text-pink-200 rounded-lg text-sm font-medium border border-pink-400/30 shadow-lg shadow-pink-500/20">CSS3</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/30 to-cyan-600/30 text-cyan-200 rounded-lg text-sm font-medium border border-cyan-400/30 shadow-lg shadow-cyan-500/20">Tailwind CSS</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-purple-500/30 to-purple-600/30 text-purple-200 rounded-lg text-sm font-medium border border-purple-400/30 shadow-lg shadow-purple-500/20">shadcn/ui</span>
+            <span className="px-4 py-2 bg-gradient-to-r from-pink-500/30 to-pink-600/30 text-pink-200 rounded-lg text-sm font-medium border border-pink-400/30 shadow-lg shadow-pink-500/20">styled-components</span>
           </div>
         </div>
 
@@ -81,8 +87,8 @@ const Freelance = () => {
           <div className="bg-gray-50/5 rounded-lg p-4">
             <p className="text-white/70 text-sm italic">
               "Working independently as a freelance full-stack developer, managing multiple client projects using modern 
-              technologies including React.js, TypeScript, Node.js, Express.js, MongoDB, and GraphQL. Delivering 
-              high-quality, scalable solutions for diverse clients while independently managing project timelines, 
+              technologies including React.js, Next.js, Node.js, MongoDB, Supabase, Tailwind CSS, shadcn/ui, and styled-components. 
+              Delivering high-quality, scalable solutions for diverse clients while independently managing project timelines, 
               budgets, and client expectations."
             </p>
           </div>

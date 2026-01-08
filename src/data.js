@@ -13,16 +13,19 @@ export const EXPERIENCE = [
         desc: "Develop custom web applications and websites for diverse clients across various industries.",
       },
       {
-        desc: "Create responsive and modern user interfaces using React.js, TypeScript, and modern CSS frameworks.",
+        desc: "Build responsive and modern user interfaces using React.js and Next.js with TypeScript, CSS3, Tailwind CSS, shadcn/ui, and styled-components.",
       },
       {
-        desc: "Build robust backend systems using Node.js, Express.js, and TypeScript for RESTful API development.",
+        desc: "Create server-side rendered and static applications using Next.js for optimal performance and SEO.",
       },
       {
-        desc: "Design and implement GraphQL APIs for efficient data fetching and real-time updates.",
+        desc: "Develop robust backend systems using Node.js and TypeScript for RESTful API development.",
       },
       {
-        desc: "Manage MongoDB databases and implement efficient data models and queries.",
+        desc: "Design and manage MongoDB databases, implementing efficient data models, schemas, and queries.",
+      },
+      {
+        desc: "Integrate Supabase for authentication, real-time databases, and backend-as-a-service functionality.",
       },
       {
         desc: "Handle client communications, project scoping, and deliver high-quality solutions within agreed timelines.",
@@ -31,10 +34,7 @@ export const EXPERIENCE = [
         desc: "Provide technical consulting and development services for startups and established businesses.",
       },
       {
-        desc: "Manage project timelines, budgets, and client expectations independently.",
-      },
-      {
-        desc: "Optimize application performance and ensure cross-platform compatibility.",
+        desc: "Optimize application performance, ensure cross-platform compatibility, and implement best practices.",
       },
     ],
   },
