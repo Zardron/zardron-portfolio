@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ASP,
   BOOTSTRAP,
@@ -95,6 +95,30 @@ const techStackCategories = {
       title: "Bootstrap",
       isImage: true,
     },
+    {
+      icon: "https://raw.githubusercontent.com/TanStack/query/main/media/repo-header.png",
+      title: "TanStack Query",
+      isImage: true,
+      isText: false,
+    },
+    {
+      icon: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+      title: "Redux",
+      isImage: true,
+      isText: false,
+    },
+    {
+      icon: "https://avatars.githubusercontent.com/u/139895814?s=280&v=4",
+      title: "Shadcn/ui",
+      isImage: true,
+      isText: false,
+    },
+    {
+      icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUAAAD////k5OQ4ODiTk5OCgoITExM0NDRgYGDq6up0dHSHh4cgICDc3Nz8/Pzh4eGioqJ7e3sLCwtDQ0MtLS329vaxsbHw8PAmJibW1tZsbGy8vLzPz89LS0uamppaWlqI3e39AAACHklEQVR4nO2a2XKjMBBFZcDsYBCLg43D//9lUhlnxoaWmYfA7Urd86imqFMgtVo0xhBCCCGEEEIIIYQQQgghq9zeA5Es/3dNc8mCY5y7b/LTZAeZxL9f4FfdfeiUtjtJHR1S3l3qPXkYLG4apPL+ebS7KJDq58PdES1lF06HQ5mCpaZOCBRgqVEKlDVUKpIjI1TKkcLOEVKqkiNlDJR6Gxyh7SeVUyqKPEdo+1TllmoLfU/KD6+O0PZbzYuJHsiRrkFK3eTIKURKmVKMVJs7vZQSs+fZX7/pllJipgq2d3pdT+VLq34Hp5Uib0pmw9c9nNZq9GZ4nO1dZTVIGVt731rncdpFyZg68SSS8e8iy6fsWnhDn+6w7O7YUMJaO7tqn/f2kjzyFVg84KdVP3rD9vXl/2Kbvnye6HjSazJffWDCeBRSApa355pOhVRzkpMnktvMSYPUcrPBS8VnfVKtcMKDSwmfoeBS4jcDsFS7nFB4KfnjClYqnJfhGqRS+ciJlZKWHloql98eVqoR1x5YKpanFFYqlZ2wUmuHUUp9U2uUumiUmjSuvlZj8gwdfQXs3udoC2GlxPYnWsrILRiwlLzRgKVy8VGhTzPCURQvJW41cCkr9PrhUqZdWuGljL9owiiQMmbem1Uh1VYKpT4rq0GhlLHHkz6pT4Ki0ydl8jj7k98TRVJfRHGdZTv+QUkIIYQQQgghhBBCCCHkN/IB9pAWqzKEFDgAAAAASUVORK5CYII=",
+      title: "Radix UI",
+      isImage: true,
+      isText: false,
+    },
   ],
   backend: [
     {
@@ -141,6 +165,18 @@ const techStackCategories = {
       icon: GRAPHQL,
       title: "GraphQL",
       isImage: true,
+    },
+    {
+      icon: "https://avatars.githubusercontent.com/u/54469796?v=4",
+      title: "Supabase",
+      isImage: true,
+      isText: false,
+    },
+    {
+      icon: "https://avatars.githubusercontent.com/u/177543?v=4",
+      title: "PostgreSQL",
+      isImage: true,
+      isText: false,
     },
   ],
   others: [
@@ -198,8 +234,38 @@ const techStackCategories = {
 };
 
 const TechStack = () => {
+  const [imageErrors, setImageErrors] = useState({});
+
+  const handleImageError = (title) => {
+    setImageErrors(prev => ({ ...prev, [title]: true }));
+  };
+
+  const renderTechIcon = (data) => {
+    if (data.isImage && !imageErrors[data.title]) {
+      return (
+        <img 
+          src={data.icon} 
+          alt={`${data.title} logo`} 
+          className="w-12 h-12 object-contain" 
+          onError={() => handleImageError(data.title)}
+          loading="lazy"
+        />
+      );
+    } else if (data.isText || imageErrors[data.title]) {
+      return (
+        <div className="w-12 h-12 flex items-center justify-center bg-gray-600/50 rounded-md">
+          <span className="text-white text-xs font-semibold text-center leading-tight">
+            {data.title.split(' ').map(word => word.substring(0, 3)).join(' ')}
+          </span>
+        </div>
+      );
+    } else {
+      return <data.icon />;
+    }
+  };
+
   return (
-    <div className="mt-4">
+    <div className="mt-4 mb-8 md:mb-4">
       <h1 className="text-xl font-bold mb-2 dark:text-white/80">
         Technology Stack
       </h1>
@@ -216,12 +282,8 @@ const TechStack = () => {
                 key={data.title}
                 className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
               >
-                {data.isImage ? (
-                  <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
-                ) : (
-                  <data.icon />
-                )}
-                <p className="text-white/80 font-light text-xs mt-2">
+                {renderTechIcon(data)}
+                <p className="text-white/80 font-light text-xs mt-2 text-center">
                   {data.title}
                 </p>
               </div>
@@ -240,12 +302,8 @@ const TechStack = () => {
                 key={data.title}
                 className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
               >
-                {data.isImage ? (
-                  <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
-                ) : (
-                  <data.icon />
-                )}
-                <p className="text-white/80 font-light text-xs mt-2">
+                {renderTechIcon(data)}
+                <p className="text-white/80 font-light text-xs mt-2 text-center">
                   {data.title}
                 </p>
               </div>
@@ -264,12 +322,8 @@ const TechStack = () => {
                 key={data.title}
                 className="flex w-24 h-24 flex-col items-center justify-center bg-gray-50/30 rounded-md hover:scale-110 transition-all ease-in-out duration-300"
               >
-                {data.isImage ? (
-                  <img src={data.icon} alt="tech-stack logo" className="w-12 h-12" />
-                ) : (
-                  <data.icon />
-                )}
-                <p className="text-white/80 font-light text-xs mt-2">
+                {renderTechIcon(data)}
+                <p className="text-white/80 font-light text-xs mt-2 text-center">
                   {data.title}
                 </p>
               </div>
