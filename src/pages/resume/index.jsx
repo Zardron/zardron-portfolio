@@ -6,7 +6,6 @@ import Education from "./Education";
 import Experience from "./Experience";
 import GetScreenSize from "../../components/GetScreenSize";
 import ScrollToContent from "../../components/ScrollToContent";
-import TechStack from "./TechStack";
 
 const index = ({ scrollNow, setScrollNow }) => {
   const screenSize = GetScreenSize();
@@ -25,7 +24,7 @@ const index = ({ scrollNow, setScrollNow }) => {
 
   screenSize.width >= 600 ? "" : scrollNow ? ScrollToContent() : "";
   return (
-    <div className="p-6">
+    <div className="p-6 pb-32 md:pb-6">
       <div className="flex items-center justify-between gap-5">
         <div>
           <h1 className="text-4xl lg:text-5xl font-semibold tracking-tight">
@@ -46,8 +45,6 @@ const index = ({ scrollNow, setScrollNow }) => {
       <Education />
 
       <Experience />
-
-      <TechStack />
     </div>
   );
 };

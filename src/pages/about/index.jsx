@@ -6,6 +6,7 @@ import ScrollToContent from "../../components/ScrollToContent.js";
 import AboutMe from "./AboutMe.jsx";
 import WhatIDo from "./WhatIDo.jsx";
 import SkillRate from "./SkillRate.jsx";
+import TechStack from "../resume/TechStack";
 
 const index = ({ scrollNow, setScrollNow }) => {
   const screenSize = GetScreenSize();
@@ -24,7 +25,7 @@ const index = ({ scrollNow, setScrollNow }) => {
   screenSize.width >= 600 ? "" : scrollNow ? ScrollToContent() : "";
 
   return (
-    <div className="p-4 sm:p-6">
+    <div className="p-4 sm:p-6 pb-32 md:pb-6">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-5">
         <div className="w-full sm:w-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">
@@ -46,6 +47,7 @@ const index = ({ scrollNow, setScrollNow }) => {
         <AboutMe />
         <WhatIDo />
         <SkillRate />
+        <TechStack />
       </div>
     </div>
   );
