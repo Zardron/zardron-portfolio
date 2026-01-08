@@ -9,7 +9,7 @@ The resume includes:
 - **Personal Information**: Contact details, location, and birth date
 - **Professional Summary**: Overview of skills and experience
 - **Work Experience**: 7 positions with detailed responsibilities
-  - Full Stack Developer at Icered (Current)
+  - Full-Stack Developer at Freelance (Current)
   - Senior Engineer at Nagarro
   - Senior Application Developer at RipeConcepts
   - Web Developer at RAKtherm Global
