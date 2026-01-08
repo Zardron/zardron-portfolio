@@ -56,12 +56,12 @@ const index = () => {
       <Transition />
       <BlackHole />
       <div
-        className={`relative h-full ${
+        className={`relative min-h-full ${
           screenSize.width >= 600
-            ? "pt-[200px] sm:pt-[240px] md:pt-[280px] pb-28"
+            ? "pt-[200px] sm:pt-[240px] md:pt-[280px] pb-20"
             : activePage === "about"
-            ? "pt-[200px] sm:pt-[240px] md:pt-[280px] pb-36 md:pb-28"
-            : "pt-[160px] sm:pt-[200px] pb-36 md:pb-28"
+            ? "pt-[200px] sm:pt-[240px] md:pt-[280px] pb-20"
+            : "pt-[160px] sm:pt-[200px] pb-20"
         } z-[30] px-4 sm:px-6 md:px-10 lg:px-20 overflow-x-hidden`}
       >
         <div className="absolute top-8 sm:top-12 md:top-16 lg:top-[210px] xl:top-20 right-0 left-0 mx-auto xl:right-auto xl:left-auto">
@@ -192,7 +192,7 @@ const index = () => {
             </motion.div>
           )}
 
-          <motion.div className="glass-container-light w-full lg:w-[60%] 2xl:w-[70%] h-full rounded-md overflow-hidden">
+          <motion.div className="glass-container-light w-full lg:w-[60%] 2xl:w-[70%] min-h-full rounded-md">
             {renderPage(activePage)}
             <Footer />
           </motion.div>
